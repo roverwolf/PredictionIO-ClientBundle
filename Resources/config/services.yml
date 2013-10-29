@@ -1,0 +1,10 @@
+parameters:
+    prediction_io.client.class: PredictionIO\PredictionIOClient
+
+services:
+    prediction_io.client:
+        class: %prediction_io.client.class%
+        factory_class: %prediction_io.client.class%
+        factory_method: factory
+        arguments:
+            - { appkey: %prediction_io.client.app_key%, appurl: %prediction_io.client.app_url% }
