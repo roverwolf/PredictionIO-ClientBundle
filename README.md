@@ -33,6 +33,7 @@ Configuration
 In the project's `app/config/config.yml` file:
 
 .. code-block::
+
     prediction_io_client:
         app_key: SERVER_APP_KEY_HERE
         app_url: URL_TO_SERVER_HERE
