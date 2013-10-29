@@ -36,3 +36,9 @@ In the project's `app/config/config.yml` file:
     prediction_io_client:
         app_key: SERVER_APP_KEY_HERE
         app_url: URL_TO_SERVER_HERE
+
+Usage
+-----
+
+One can now use `$container->get('prediction_io.client')` to get an
+instantiated client which can be used the same as the [PredictionIO-PHP-SDK](https://github.com/PredictionIO/PredictionIO-PHP-SDK#usage) library.
