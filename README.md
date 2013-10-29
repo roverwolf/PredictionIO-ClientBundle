@@ -9,7 +9,7 @@ Installation
 
 Using Composer:
 
-Add the following dependencies to your project's composer.json file:
+Add the following dependencies to your project's `composer.json` file:
 
 .. code-block::
 
@@ -19,7 +19,7 @@ Add the following dependencies to your project's composer.json file:
         # ..
     }
 
-and add the following to your project's app/AppKernel.php file:
+and add the following to your project's `app/AppKernel.php` file:
 
 .. code-block::
 
@@ -27,3 +27,12 @@ and add the following to your project's app/AppKernel.php file:
     new PredictionIO\ClientBundle\PredictionIOClientBundle(),
     # ..
 
+Configuration
+-------------
+
+In the project's `app/config/config.yml` file:
+
+.. code-block::
+    prediction_io_client:
+        app_key: SERVER_APP_KEY_HERE
+        app_url: URL_TO_SERVER_HERE
